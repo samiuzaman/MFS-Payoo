@@ -1,18 +1,3 @@
-// document
-//   .getElementById("login-btn")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-//     const phoneNumber = document.getElementById("phone-number");
-//     console.log(phoneNumber.value);
-//     const pinNumber = document.getElementById("pin-number");
-//     console.log(pinNumber.value);
-//     // if (phoneNumber === "5" && pinNumber === "1234") {
-//     //   console.log("You are Log In");
-//     // } else {
-//     //   alert("Wrong phone number or pin");
-//     // }
-//   });
-
 document
   .getElementById("login-btn")
   .addEventListener("click", function (event) {

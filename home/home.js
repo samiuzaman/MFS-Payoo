@@ -4,15 +4,17 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     // Get money to be added to the account
-    const addMoneyInput = document.getElementById("input-add-money").value;
+    const inputAddMoney = document.getElementById("input-add-money").value;
     // Get the pin number provided
-    const pinNumber = document.getElementById("input-pin-number").value;
-
-    if (pinNumber === "1234") {
+    const inputPinNumber = document.getElementById("input-pin-number").value;
+    // verify pin number
+    if (inputPinNumber === "1234") {
       const mainBalance = document.getElementById("main-balance").innerText;
-      const newBalance = parseFloat(mainBalance) + parseFloat(addMoneyInput);
+      // added addMoneyInput with balance
+      const newBalance = parseFloat(mainBalance) + parseFloat(inputAddMoney);
+      // update the balance
       document.getElementById("main-balance").innerText = newBalance;
     } else {
-      alert("Faild to add money");
+      alert("Your pin is wrong");
     }
   });
