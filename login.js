@@ -23,7 +23,7 @@ document
 
     // validate
     if (phoneNumber === "5" && pinNumber === "1234") {
-      window.location.href = "/home/home.html";
+      window.location.href = "home/home.html";
     } else {
       alert("Wrong Phone Number or Pin");
     }
