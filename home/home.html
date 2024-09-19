@@ -29,12 +29,16 @@
               <div class="divider"></div>
               <!-- user action buttons -->
               <div>
-                <button class="btn btn-lg">Add Money</button>
-                <button class="btn btn-lg">Cash Out</button>
+                <button id="add-money-section-btn" class="btn btn-lg">
+                  Add Money
+                </button>
+                <button id="cash-out-section-btn" class="btn btn-lg">
+                  Cash Out
+                </button>
               </div>
               <div class="divider"></div>
               <!-- Add money Form Start -->
-              <div
+              <div id="add-money-contaienr"
                 class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
               >
                 <form class="card-body">
@@ -71,7 +75,9 @@
               </div>
               <!-- Add money Form End -->
               <!-- Cash Out Form Start -->
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div id="cash-out-container"
+                class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
@@ -110,7 +116,8 @@
         </div>
       </div>
     </main>
-    <!-- <script src="home.js"></script> -->
+    <script src="home.js"></script>
+    <script src="add_money.js"></script>
     <script src="cash_out.js"></script>
   </body>
 </html>
