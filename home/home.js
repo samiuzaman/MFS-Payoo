@@ -9,11 +9,12 @@ document
     const inputPinNumber = document.getElementById("input-pin-number").value;
     // verify pin number
     if (inputPinNumber === "1234") {
-      const mainBalance = document.getElementById("main-balance").innerText;
+      const balance = document.getElementById("main-balance");
+      const currentBalance = balance.innerText;
       // added addMoneyInput with balance
-      const newBalance = parseFloat(mainBalance) + parseFloat(inputAddMoney);
+      const newBalance = parseFloat(currentBalance) + parseFloat(inputAddMoney);
       // update the balance
-      document.getElementById("main-balance").innerText = newBalance;
+      balance.innerText = newBalance;
     } else {
       alert("Your pin is wrong");
     }

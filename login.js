@@ -7,7 +7,7 @@ document
     const pinNumber = document.getElementById("pin-number").value;
 
     // validate
-    if (phoneNumber === "5" && pinNumber === "1234") {
+    if (phoneNumber === "0123456789" && pinNumber === "1234") {
       window.location.href = "home/home.html";
     } else {
       alert("Wrong Phone Number or Pin");
